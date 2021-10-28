@@ -8,7 +8,7 @@ Made by **Denis Krepak**
 
 Simple app for restaurant booking that accepts and responds to HTTP requests. 
 
-What can you do?
+### What can you do?
 
 - See all the tables 
 - Use filters for getting information about tables via flags: capacity, is reserved 
@@ -36,12 +36,6 @@ docker-compose up -d --build
 ```
 docker-compose exec web python manage.py makemigrations --noinput \
     && docker-compose exec web python manage.py migrate --noinput
-```
-4. Fill the DB(optional):
-```
-docker-compose exec web python manage.py loaddata reservation/fixtures/table.json
-docker-compose exec web python manage.py loaddata reservation/fixtures/client.json
-docker-compose exec web python manage.py loaddata reservation/fixtures/reservation.json
 ```
 
 
